@@ -58,5 +58,18 @@ namespace MiniRPG
                 Console.WriteLine($"{Nome} usou {item.Nome}!");
             }
         }
+
+        public void ExibirStatusCompleto()
+        {
+            Console.WriteLine("\n╔════════════════════════════════════════╗");
+            Console.WriteLine($"║  {Nome,-36} ║");
+            Console.WriteLine("╠════════════════════════════════════════╣");
+            Console.WriteLine($"║  Nível: {Nivel,-30} ║");
+            Console.WriteLine($"║  Vida: {Vida}/{VidaMaxima,-27} ║");
+            Console.WriteLine($"║  Ataque: {Ataque,-29} ║");
+            Console.WriteLine($"║  Defesa: {Defesa,-29} ║");
+            Console.WriteLine($"║  EXP: {Experiencia}/{ExperienciaParaProximoNivel,-27} ║");
+            Console.WriteLine("╚════════════════════════════════════════╝");
+        }
     }
 }

@@ -32,5 +32,21 @@ namespace MiniRPG
 
             return null;
         }
+
+        public override int Atacar()
+        {
+            // Vilões podem ter ataques mais agressivos
+            Random random = new Random();
+            int dano = base.Atacar();
+            
+            // 20% de chance de ataque crítico
+            if (random.Next(100) < 20)
+            {
+                dano = (int)(dano * 1.5);
+                Console.WriteLine($"{Nome} realizou um ATAQUE CRÍTICO!");
+            }
+
+            return dano;
+        }
     }
 }

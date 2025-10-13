@@ -93,6 +93,13 @@ namespace MiniRPG
             Console.ReadKey();
         }
 
-    
+        public void ExibirDetalhes()
+        {
+            Console.WriteLine($"\n[FASE {Numero}: {Nome}]");
+            Console.WriteLine($"Status: {(Completa ? "COMPLETA" : "PENDENTE")}");
+            Console.WriteLine($"Descrição: {Descricao}");
+            Console.WriteLine($"Inimigos: {Viloes.Count}");
+            Console.WriteLine($"Recompensas: {Recompensas.Count}");
+        }
     }
 }

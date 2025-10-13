@@ -39,7 +39,9 @@ namespace MiniRPG
             if (Vida > VidaMaxima) Vida = VidaMaxima;
         }
 
-
-
+        public void ExibirStatus()
+        {
+            Console.WriteLine($"{Nome} - Vida: {Vida}/{VidaMaxima} | Ataque: {Ataque} | Defesa: {Defesa}");
+        }
     }
 }

@@ -51,5 +51,15 @@ namespace MiniRPG
                     break;
             }
         }
+
+        public void ExibirDetalhes()
+        {
+            Console.WriteLine($"\n[{Nome}]");
+            Console.WriteLine($"Tipo: {Tipo}");
+            Console.WriteLine($"Descrição: {Descricao}");
+            if (BonusVida > 0) Console.WriteLine($"  +{BonusVida} Vida");
+            if (BonusAtaque > 0) Console.WriteLine($"  +{BonusAtaque} Ataque");
+            if (BonusDefesa > 0) Console.WriteLine($"  +{BonusDefesa} Defesa");
+        }
     }
 }

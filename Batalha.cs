@@ -7,6 +7,16 @@ namespace MiniRPG
         private Vilao vilao;
         private bool fugiu;
 
+<<<<<<< HEAD
+=======
+        public Batalha(Heroi heroi, Vilao vilao)
+        {
+            this.heroi = heroi;
+            this.vilao = vilao;
+            this.fugiu = false;
+        }
+
+>>>>>>> origin/feature/combate
         public bool Iniciar()
         {
             Console.Clear();

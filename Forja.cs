@@ -34,7 +34,49 @@ namespace MiniRPG
             Console.WriteLine("Sistema de forja inicializado com receitas básicas.");
         }
 
+<<<<<<< HEAD
     
+=======
+        public void ExibirMenuForja(Heroi heroi)
+        {
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("\n╔════════════════════════════════════════╗");
+                Console.WriteLine("║              FORJA                     ║");
+                Console.WriteLine("╠════════════════════════════════════════╣");
+                Console.WriteLine("║  1. Ver Receitas Disponíveis           ║");
+                Console.WriteLine("║  2. Forjar Item                        ║");
+                Console.WriteLine("║  3. Ver Materiais                      ║");
+                Console.WriteLine("║  0. Voltar                             ║");
+                Console.WriteLine("╚════════════════════════════════════════╝");
+
+                Console.Write("\nEscolha uma opção: ");
+                string? opcao = Console.ReadLine();
+
+                switch (opcao)
+                {
+                    case "1":
+                        ExibirReceitas();
+                        break;
+                    case "2":
+                        ForjarItem(heroi);
+                        break;
+                    case "3":
+                        ExibirMateriais(heroi);
+                        break;
+                    case "0":
+                        return;
+                    default:
+                        Console.WriteLine("Opção inválida!");
+                        break;
+                }
+
+                Console.WriteLine("\nPressione qualquer tecla para continuar...");
+                Console.ReadKey();
+            }
+        }
+>>>>>>> origin/feature/combate
 
         private void ExibirReceitas()
         {
